@@ -24,7 +24,7 @@
         android:layout_marginStart="52dp"
         android:lineSpacingExtra="8sp"
         android:text="login"
-
+        android:onClick="login"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="16sp"
         android:visibility="visible" />
