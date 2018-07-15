@@ -150,12 +150,14 @@
         android:id="@+id/imageView3"
         android:layout_width="74dp"
         android:layout_height="57dp"
+        android:layout_marginBottom="71dp"
+        android:layout_marginEnd="38dp"
         android:adjustViewBounds="true"
         android:cropToPadding="true"
-        android:visibility="visible"
         android:onClick="passLayout"
-        app:srcCompat="@android:drawable/ic_menu_send"
-        tools:layout_editor_absoluteX="248dp"
-        tools:layout_editor_absoluteY="439dp" />
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_send" />
 
 </android.support.constraint.ConstraintLayout>
