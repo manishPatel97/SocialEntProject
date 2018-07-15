@@ -3,6 +3,7 @@ package com.example.dell.socialentproject;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -95,7 +96,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);*/
     }
-
+    public void home(View view){
+        Intent i= new Intent(this, userHome.class);
+        startActivity(i);
+    }
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
             return;
