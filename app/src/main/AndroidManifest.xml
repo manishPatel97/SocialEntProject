@@ -26,17 +26,23 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-            android:label="@string/title_activity_login">
+                android:value=".MainActivity"
+            android:label="@string/title_activity_login"/>
         </activity>
-        <activity android:name=".Register">
+        <activity android:name=".Register"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".userHome" />
-        <activity android:name=".mcdHome"></activity>
+        <activity android:name=".mcdHome" />
+        <activity android:name=".PassLayout"
+            android:parentActivityName = ".Register">
+            <meta-data
+                android:name ="android.support.PARENT_ACTIVITY"
+                android:value=".Register" />
+        </activity>
     </application>
 
 </manifest>
