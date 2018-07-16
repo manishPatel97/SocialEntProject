@@ -18,9 +18,13 @@ public class Register extends AppCompatActivity {
 
     }
 
+   /* public void login(View view){
+        Intent i = new Intent(this,LoginActivity.class);
+        startActivity(i);
+    }*/
     public void disCreds(View view)
     {
-        /*EditText name = (EditText) findViewById(R.id.id_name);
+        EditText name = (EditText) findViewById(R.id.id_name);
         EditText email = (EditText) findViewById(R.id.id_email);
         EditText phone = (EditText) findViewById(R.id.id_phone);
         EditText address = (EditText) findViewById(R.id.id_address);
@@ -33,7 +37,7 @@ public class Register extends AppCompatActivity {
         vals.put(dbTables.User.COLUMN_USER_PHONE, phone.getText().toString());
         vals.put(dbTables.User.COLUMN_USER_ADDRESS, address.getText().toString());
         long newUserId = db.insert(dbTables.User.TABLE_USER, null, vals);
-        System.out.println(newUserId);*/
+        System.out.println(newUserId);
 
 
         //Bundle b = new Bundle();

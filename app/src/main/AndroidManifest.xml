@@ -36,6 +36,8 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".userHome" />
+        <activity android:name=".PassLayout"/>
+        <activity android:name=".Problem_Submission"/>
         <activity android:name=".mcdHome"></activity>
     </application>
 
