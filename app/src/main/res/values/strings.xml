@@ -22,4 +22,5 @@
     <string name="submit_problem">Submit Problem</string>
     <string name="logout">Logout</string>
     <string name="hi">Hi,</string>
+    <string name="hello">Hello,</string>
 </resources>
