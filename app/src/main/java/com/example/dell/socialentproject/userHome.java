@@ -16,4 +16,9 @@ public class userHome extends AppCompatActivity {
         Intent i= new Intent(this, LoginActivity.class);
         startActivity(i);
     }
+
+    public void submitProblem(View view){
+        Intent i = new Intent(this,Problem_Submission.class);
+        startActivity(i);
+    }
 }

@@ -44,6 +44,7 @@
         android:layout_marginTop="137dp"
         android:backgroundTint="@android:color/holo_blue_bright"
         android:text="@string/submit_problem"
+        android:onClick="submitProblem"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
