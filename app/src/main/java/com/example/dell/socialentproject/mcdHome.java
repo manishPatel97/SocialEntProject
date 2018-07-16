@@ -11,12 +11,12 @@ public class mcdHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mcd_home);
-        Button b5 = (Button) findViewById(R.id.button5);
-        Button b6 = (Button) findViewById(R.id.button6);
-        b5.callOnClick(
+        Button b1 = (Button) findViewById(R.id.button_mcd);
+        Button b2 = (Button) findViewById(R.id.mcd_info);
+        b1.callOnClick(
 
         );
-        b6.callOnClick(
+        b2.callOnClick(
                 //function
         );
     }
