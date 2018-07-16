@@ -7,6 +7,7 @@
     tools:context=".userHome">
 
 <<<<<<< HEAD
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -101,6 +102,5 @@
         android:textStyle="bold|italic"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
-=======
->>>>>>> 51c8838cd5581c0fa8c5a2d7f0c3c635477f305f
+
 </android.support.constraint.ConstraintLayout>
