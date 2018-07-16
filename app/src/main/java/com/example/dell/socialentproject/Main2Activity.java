@@ -1,13 +1,14 @@
 package com.example.dell.socialentproject;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.app.Activity;
 
-public class userHome extends AppCompatActivity {
+public class Main2Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_home);
+        setContentView(R.layout.activity_main2);
     }
+
 }
