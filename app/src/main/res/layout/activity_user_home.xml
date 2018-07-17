@@ -84,7 +84,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@+id/logout"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bell" />
+        app:srcCompat="@drawable/settingicon" />
 
     <EditText
         android:id="@+id/editText"
