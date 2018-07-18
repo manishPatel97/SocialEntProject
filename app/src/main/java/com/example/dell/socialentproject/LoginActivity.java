@@ -67,6 +67,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
+        populateAutoComplete();
+        mPasswordView = (EditText) findViewById(R.id.password);
+
         // Set up the login form.
 /*        mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
@@ -97,8 +101,17 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mProgressView = findViewById(R.id.login_progress);*/
     }
     public void home(View view){
-        Intent i= new Intent(this, userHome.class);
-        startActivity(i);
+        Intent i = new Intent(this, userHome.class);
+        mEmailView.setError(null);
+        mPasswordView.setError(null);
+
+        // Store values at the time of the login attempt.
+        String email = mEmailView.getText().toString();
+        String password = mPasswordView.getText().toString();
+        if(email.compareTo("ward221")==0 && password.compareTo("admin")==0) {
+            //Intent i = new Intent(this, userHome.class);
+            startActivity(i);
+        }
     }
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {

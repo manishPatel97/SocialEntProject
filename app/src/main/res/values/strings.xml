@@ -23,4 +23,5 @@
     <string name="notification">notification</string>
     <string name="neta_info">netainfo</string>
     <string name="hello_counsellor">Hello Counsellor</string>
+    <string name="title_activity_compose__mcd">compose_MCD</string>
 </resources>
