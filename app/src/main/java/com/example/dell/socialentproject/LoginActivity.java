@@ -102,6 +102,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
     public void home(View view){
         Intent i = new Intent(this, userHome.class);
+        Intent k = new Intent (this,mcdHome.class);
         mEmailView.setError(null);
         mPasswordView.setError(null);
 
@@ -110,6 +111,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         String password = mPasswordView.getText().toString();
         if(email.compareTo("ward221")==0 && password.compareTo("admin")==0) {
             //Intent i = new Intent(this, userHome.class);
+            startActivity(k);
+        }else{
             startActivity(i);
         }
     }
