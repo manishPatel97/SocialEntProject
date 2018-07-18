@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/hello"
+
         android:textAllCaps="true"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -85,21 +85,5 @@
         app:layout_constraintEnd_toStartOf="@+id/logout"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/settingicon" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="89dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:selectAllOnFocus="true"
-        android:singleLine="true"
-        android:text="Name"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

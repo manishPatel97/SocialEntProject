@@ -109,10 +109,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+
         if(email.compareTo("ward221")==0 && password.compareTo("admin")==0) {
             //Intent i = new Intent(this, userHome.class);
+            k.putExtra("username",email);
             startActivity(k);
         }else{
+            i.putExtra("username",email);
             startActivity(i);
         }
     }
