@@ -119,9 +119,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             i.putExtra("ward","ward221");
             startActivity(i);
         }else{
-            startActivity(i);
             i.putExtra("username",email);
-        }
+            startActivity(i);
     }
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {

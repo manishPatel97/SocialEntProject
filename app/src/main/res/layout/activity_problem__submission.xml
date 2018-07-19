@@ -46,22 +46,22 @@
 
     <EditText
         android:id="@+id/topicName"
-        android:layout_width="wrap_content"
+        android:layout_width="328dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="27dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Enter Your Topic"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/Description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="21dp"
+        android:layout_width="324dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:hint="Briefly Describe your Problem"
         android:inputType="textMultiLine"
@@ -70,33 +70,37 @@
 
     <EditText
         android:id="@+id/Address"
-        android:layout_width="wrap_content"
-        android:layout_height="53dp"
+        android:layout_width="325dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
         android:ems="10"
         android:hint="Enter Address"
         android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="241dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Description" />
 
     <TextView
         android:id="@+id/submitphoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:text="Attach photo "
         android:textSize="16sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Address" />
 
     <TextView
         android:id="@+id/sumbit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
-        android:layout_marginEnd="92dp"
-        android:text="Submit"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="19dp"
         android:onClick="userHome"
+        android:text="Submit"
+        android:textAllCaps="true"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold|italic"
