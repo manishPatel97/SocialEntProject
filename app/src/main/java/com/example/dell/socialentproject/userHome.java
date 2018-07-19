@@ -18,6 +18,7 @@ public class userHome extends AppCompatActivity {
         TextView textView =(TextView) findViewById(R.id.textView2);
         textView.setText("Hello, "+getIntent().getExtras().getString("username"));
         name = getIntent().getExtras().getString("username");
+        //System.out.println("user" +name);
         ward = getIntent().getExtras().getString("ward");
 
     }
@@ -30,7 +31,8 @@ public class userHome extends AppCompatActivity {
 
     public void submitProblem(View view){
         Intent i = new Intent(this,Problem_Submission.class);
-        i.putExtra("name",name);
+        //System.out.println("user1 "+ name);
+        i.putExtra("username",name);
         i.putExtra("ward",ward);
         startActivity(i);
     }

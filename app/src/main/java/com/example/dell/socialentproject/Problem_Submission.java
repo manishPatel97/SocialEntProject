@@ -9,10 +9,14 @@ import android.content.Intent;
 
 public class Problem_Submission extends AppCompatActivity {
 
+    String name,ward;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problem__submission);
+        name = getIntent().getExtras().getString("username");
+
+        ward = getIntent().getExtras().getString("ward");
     }
     public void login(View view){
         Intent i =  new Intent(this,LoginActivity.class);
@@ -37,6 +41,8 @@ public class Problem_Submission extends AppCompatActivity {
     }
     public void click(View view){
         Intent i = new Intent(this,userHome.class);
+        i.putExtra("username",name);
+        i.putExtra("ward",ward);
         startActivity(i);
     }
 }
