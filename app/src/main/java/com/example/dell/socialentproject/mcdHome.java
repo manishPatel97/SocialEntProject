@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class mcdHome extends AppCompatActivity {
 
+
+    protected  String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,12 @@ public class mcdHome extends AppCompatActivity {
     }
     public void login(View view){
         Intent i= new Intent(this, LoginActivity.class);
+        startActivity(i);
+    }
+    public void compose(View view){
+        Intent i= new Intent(this, compose_MCD.class);
+        name = getIntent().getExtras().getString("username");
+        i.putExtra("username",name);
         startActivity(i);
     }
 

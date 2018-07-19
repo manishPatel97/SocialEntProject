@@ -114,9 +114,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             //Intent i = new Intent(this, userHome.class);
             k.putExtra("username",email);
             startActivity(k);
-        }else{
+        }else if(email.compareTo("Manish")==0 &&password.compareTo("jack")==0){
             i.putExtra("username",email);
+            i.putExtra("ward","ward221");
             startActivity(i);
+        }else{
+            startActivity(i);
+            i.putExtra("username",email);
         }
     }
     private void populateAutoComplete() {

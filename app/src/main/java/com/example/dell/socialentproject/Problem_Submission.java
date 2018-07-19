@@ -16,6 +16,7 @@ public class Problem_Submission extends AppCompatActivity {
     }
     public void login(View view){
         Intent i =  new Intent(this,LoginActivity.class);
+
         startActivity(i);
     }
     public  void userHome(final View view){
