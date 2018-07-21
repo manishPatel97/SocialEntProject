@@ -39,6 +39,7 @@ public class userHome extends AppCompatActivity {
     public void setting(View view){
         Intent i = new Intent(this,setting.class);
         i.putExtra("username",name);
+        i.putExtra("type","userhome");
         i.putExtra("ward",ward);
         startActivity(i);
     }

@@ -42,7 +42,10 @@
         <activity
             android:name=".compose_MCD"
             android:label="@string/title_activity_compose__mcd" />
-        <activity android:name=".setting"></activity>
+        <activity android:name=".setting" />
+        <activity
+            android:name=".tabbed_Activity"
+            android:label="@string/title_activity_tabbed_"></activity>
     </application>
 
 </manifest>

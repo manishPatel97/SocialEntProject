@@ -32,7 +32,7 @@ public class mcdHome extends AppCompatActivity {
     public void setting(View view){
         Intent i = new Intent(this,setting.class);
         i.putExtra("username",name);
-        i.putExtra("ward",name);
+        i.putExtra("type","mcdhome");
         startActivity(i);
     }
 

@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 public class Register extends AppCompatActivity {
-
+    String username;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +29,12 @@ public class Register extends AppCompatActivity {
         EditText phone = (EditText) findViewById(R.id.id_phone);
         EditText address = (EditText) findViewById(R.id.id_address);
         //Spinner ward = (Spinner) findViewById(R.id.ward_dropdown);
+
         dbTableDbHelper h = new dbTableDbHelper(getBaseContext());
         SQLiteDatabase db = h.getWritableDatabase();
         ContentValues vals = new ContentValues();
         vals.put(dbTables.User.COLUMN_USER_NAME, name.getText().toString());
+        username = name.getText().toString();
         vals.put(dbTables.User.COLUMN_USER_EMAIL, email.getText().toString());
         vals.put(dbTables.User.COLUMN_USER_PHONE, phone.getText().toString());
         vals.put(dbTables.User.COLUMN_USER_ADDRESS, address.getText().toString());
@@ -42,6 +44,8 @@ public class Register extends AppCompatActivity {
 
         //Bundle b = new Bundle();
         Intent i = new Intent (this,PassLayout.class);
+        i.putExtra("type","Register");
+        i.putExtra("username",username);
         startActivity(i);
     }
 }
