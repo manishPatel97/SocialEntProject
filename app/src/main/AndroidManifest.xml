@@ -44,8 +44,8 @@
             android:label="@string/title_activity_compose__mcd" />
         <activity android:name=".setting" />
         <activity
-            android:name=".tabbed_Activity"
-            android:label="@string/title_activity_tabbed_"></activity>
+            android:name=".couns_info"
+            android:label="@string/title_activity_couns_info"></activity>
     </application>
 
 </manifest>

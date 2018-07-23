@@ -43,5 +43,9 @@ public class userHome extends AppCompatActivity {
         i.putExtra("ward",ward);
         startActivity(i);
     }
+    public void neta_info(View view){
+        Intent i = new Intent(this,couns_info.class);
+        startActivity(i);
+    }
 
 }

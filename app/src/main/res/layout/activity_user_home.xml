@@ -71,6 +71,7 @@
         android:layout_marginStart="36dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="@string/neta_info"
+        android:onClick="neta_info"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
