@@ -47,5 +47,8 @@ public class userHome extends AppCompatActivity {
         Intent i = new Intent(this,couns_info.class);
         startActivity(i);
     }
-
+    public void notifybutton(View view){
+        Intent i = new Intent(this,notificationActivity.class);
+        startActivity(i);
+    }
 }

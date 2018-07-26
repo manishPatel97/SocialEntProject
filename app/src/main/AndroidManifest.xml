@@ -45,7 +45,10 @@
         <activity android:name=".setting" />
         <activity
             android:name=".couns_info"
-            android:label="@string/title_activity_couns_info"></activity>
+            android:label="@string/title_activity_couns_info" />
+        <activity
+            android:name=".notificationActivity"
+            android:label="@string/title_activity_notification"></activity>
     </application>
 
 </manifest>
