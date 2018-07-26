@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
 
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.design.widget.TabLayout;
@@ -25,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class couns_info extends AppCompatActivity {
+public class couns_info extends AppCompatActivity implements frag_one.OnFragmentInteractionListener,frag_two.OnFragmentInteractionListener,frag_three.OnFragmentInteractionListener{
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -36,7 +37,9 @@ public class couns_info extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
-
+    public void onFragmentInteraction(Uri uri){
+        //you can leave it empty
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
