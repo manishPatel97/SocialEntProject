@@ -59,9 +59,9 @@ public class couns_info extends AppCompatActivity implements frag_one.OnFragment
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new frag_one(), "ONE");
-        adapter.addFragment(new frag_two(), "TWO");
-        adapter.addFragment(new frag_three(), "THREE");
+        adapter.addFragment(new frag_one(), "Personal Details");
+        adapter.addFragment(new frag_two(), "Educational and Assets");
+        adapter.addFragment(new frag_three(), "Criminal charges details");
         viewPager.setAdapter(adapter);
     }
     class ViewPagerAdapter extends FragmentPagerAdapter {

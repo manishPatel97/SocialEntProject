@@ -3,10 +3,14 @@ package com.example.dell.socialentproject;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
 import com.example.dell.socialentproject.R;
 
 /**
@@ -65,6 +69,23 @@ public class frag_two extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_frag_two, container, false);
+    }
+
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+       // ImageView img = getView().findViewById(R.id.imageView3);
+        //img.setImageResource(R.drawable.ward1);
+        TextView educQuali  = getView().findViewById(R.id.textView19);
+        TextView assets = getView().findViewById(R.id.textView21);
+
+
+        educQuali.setText("12th Pass\n" +
+                "Senior Secondary School Examination (12th Certificates) From National School Of Open Schooling in 2016\n");
+        assets.setText("Rs. 35,92,515 ~35 Lacs+");
+
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -3,10 +3,13 @@ package com.example.dell.socialentproject;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.dell.socialentproject.R;
 /**
@@ -60,12 +63,38 @@ public class frag_one extends Fragment {
         }
     }
 
+
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_frag_one, container, false);
+
     }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        ImageView img = getView().findViewById(R.id.imageView3);
+        img.setImageResource(R.drawable.ward1);
+        TextView name  = getView().findViewById(R.id.textView6);
+        TextView age = getView().findViewById(R.id.textView7);
+        TextView spouse  = getView().findViewById(R.id.textView11);
+        TextView party  = getView().findViewById(R.id.textView12);
+        TextView address  = getView().findViewById(R.id.textView13);
+
+        name.setText("Kiran");
+        age.setText("Age 42");
+        spouse.setText("Late Sunil Kumar");
+        party.setText("B.J.P");
+        address.setText("21/72-73, Trilok Puri, Delhi-110091");
+
+
+
+    }
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
